@@ -2,6 +2,7 @@ function openNav() {
     document.getElementById("SideNavMenu").style.marginLeft = "0";
     document.getElementById("SideNavMenu").style.width = "100vw";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)t";
+    console.log("open");
 }
 
 function closeNav() {
@@ -36,7 +37,3 @@ function hideContent() {
     document.getElementById("descriptionHeatExchanger").style.display = "none";
     document.getElementById("expandDataLink").style.display = "inline";
 }
-
-$(function () {
-    $('[data-toggle="popover"]').popover()
-})
