@@ -2,12 +2,14 @@ function openNav() {
     document.getElementById("SideNavMenu").style.marginLeft = "0";
     document.getElementById("SideNavMenu").style.width = "100vw";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)t";
+    document.body.style.overflow = "hidden";
     console.log("open");
 }
 
 function closeNav() {
     document.getElementById("SideNavMenu").style.marginLeft = "-100vw";
     document.body.style.backgroundColor = "white";
+    document.body.style.overflow = "visible";
 }
 
 function playPause(btn,vid){
