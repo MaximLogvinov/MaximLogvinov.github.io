@@ -125,9 +125,10 @@ a:hover {
     background-color: white;
 }
 #videoWrapper{
+    z-index: 0;
     position: relative;
     width: 365px;
-    margin:0px auto;
+    margin:0 auto;
 }
 .play-text {
     padding: 0 42px;
