@@ -4,6 +4,9 @@ body {
 .header-on-scroll {
     background-color: rgba(96,113,117,0.4);
 }
+.indent-on-header-size {
+    padding-top: 80px;
+}
 /*primary block style*/
 .primary-bg {
     height: 100vh;

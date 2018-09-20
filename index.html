@@ -72,10 +72,12 @@
         $(window).scroll(function() {
             var scroll = $(window).scrollTop();
 
-            if(scroll >= 100) {
+            if(scroll >= 500) {
                 $(".navbar").addClass("fixed-top header-on-scroll");
+                $("#main").addClass("indent-on-header-size");
             } else {
                 $(".navbar").removeClass("fixed-top header-on-scroll");
+                $("#main").addClass("indent-on-header-size");
             }
         });
     </script>
