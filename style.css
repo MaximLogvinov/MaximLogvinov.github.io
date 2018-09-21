@@ -1,8 +1,15 @@
 body {
     font-family: 'Raleway', sans-serif!important;
 }
+.full-height{
+    min-height:100vh;
+}
+.full-height.larger{
+    min-height:125vh;
+}
 .header-on-scroll {
-    background-color: rgba(96,113,117,0.4);
+    padding: 0 1rem!important;
+    background-color: rgba(96,113,117,1);
 }
 .indent-on-header-size {
     padding-top: 80px;
@@ -27,6 +34,17 @@ body {
         background-image: url("img/primary.bg.md.png");
     }
 }
+@media (max-width: 800px) and (min-width: 768px) {
+    .fix-nav-item-indent.nav-link {
+        padding: 0.5rem 4px!important;
+    }
+}
+@media (max-width: 907px) and (min-width: 890px) {
+    .fix-nav-item-indent.nav-link {
+        padding: 0.5rem 4px!important;
+    }
+}
+
 .align-primary-content {
     padding-top: 10vh;
 }
@@ -126,10 +144,11 @@ a:hover {
 #playPauseBtn {
     color: rgb(220, 60, 26);
     border: 0;
-    padding: 20px;
+    padding: 20px 25px;
     background-color: white;
 }
 #videoWrapper{
+    transform: translateY(-10px);
     z-index: 0;
     position: relative;
     width: 365px;
@@ -138,6 +157,15 @@ a:hover {
 .play-text {
     padding: 0 42px;
     color: white;
+}
+@media (max-width: 706px) and (min-width: 576px) {
+    .play-text {
+        padding: 0 10px;
+        color: white;
+    }
+    #videoBar {
+        left: -97px!important;
+    }
 }
 .toggle-link {
     padding: 10px;
@@ -195,7 +223,7 @@ a:hover {
     z-index: 17;
     display: none;
     position: absolute;
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 27px 5px -3px rgba(0, 0, 0, 0.2);
     background-color: white;
 }
 /*Heat Exchanger block*/
@@ -203,7 +231,7 @@ a:hover {
     margin-top: -30px;
     display: none;
     position: relative;
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 27px 5px -3px rgba(0, 0, 0, 0.2);
     z-index: 3;
     /*background-color: white;*/
 }
@@ -247,11 +275,14 @@ a:hover {
     font-weight: bold;
     color: #4E5F69;
 }
+.unit-img-wrapper {
+    width: 95px;
+}
 /*Road map*/
 .red-vertical-line {
     border-radius: 10px;
-    height: 60px;
-    width: 5px;
+    height: 65px;
+    width: 3px;
     background: rgb(220, 60, 26);
 }
 /*Reviews*/
